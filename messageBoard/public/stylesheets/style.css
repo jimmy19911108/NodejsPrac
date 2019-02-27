@@ -1,0 +1,13 @@
+body {
+  padding: 20px;
+  font: 18px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+textarea {
+  resize: none;
+  overflow: hidden;
+}

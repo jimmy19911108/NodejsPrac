@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Message Board</title>
+    </head>
+
+    <body>
+        <div>
+            <h1 align="center">MCAS Message Board</h1>
+        </div>
+        <hr>
+        <div>
+            <article>
+                <header>
+                    <h1>History Message</h1>
+                </header>
+                <table id="historyMessageTable">
+                    <tr>
+                        <td>Name</td><td>Message</td><td>Time</td>
+                    </tr>
+                    <tr id="noMessage"> 
+                        <td>No Message</tdid>
+                    </tr>
+                </table>
+            </article>
+        </div>
+        <hr>
+        <div>
+            <form id="messageForm" method="POST" action="http://localhost:3000/">
+                <p>User Name</p>
+                <textarea id="userName" rows="1" name="name"></textarea>
+                <p>Message</p>
+                <textarea id="inputMessage" rows="5" cols="50" name="message"></textarea><br>
+                <button id="sendButton" type="submit">Send</button>
+                <button id="clearButton" type="button">Clear</button>
+            </form>
+        </div>
+
+        <link rel="stylesheet" href="./stylesheets/style.css"/>
+        <script src="./javascripts/jquery-3.2.1.js"></script>
+        <script src="./javascripts/main.js"></script>
+    </body>
+</html>
